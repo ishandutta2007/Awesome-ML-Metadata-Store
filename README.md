@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-ML-Metadata-Store?style=flat-square&color=blue" alt="GitHub Stars" />
+  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-ML-Metadata-Store?style=flat-square&color=blue" alt="GitHub_Stars" />
   <img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-ML-Metadata-Store?style=flat-square&color=green" alt="Last Commit" />
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License" />
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -64,9 +64,9 @@ The table below lists leading commercial SaaS and managed platforms for ML metad
 
 ## 🔓 Open-Source GitHub Projects
 
-Below are top open-source ML metadata store libraries, experiment trackers, and MLOps platforms, sorted descending by GitHub star count ⭐.
+Below are top open-source ML metadata store libraries, experiment trackers, and MLOps platforms, sorted descending by GitHub Stars_Count ⭐.
 
-| Open-Source Project 🛠️ | GitHub Stars ⭐ | Primary Focus 🎯 | Description 📝 |
+| Open-Source Project 🛠️ | GitHub_Stars ⭐ | Primary Focus 🎯 | Description 📝 |
 | :--- | :---: | :--- | :--- |
 | **[MLflow](https://github.com/mlflow/mlflow)** | [<img src="https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white" alt="MLflow Stars"/>](https://github.com/mlflow/mlflow/stargazers) | Experiment Tracking & Model Registry | The most popular open-source platform for ML experiment tracking, evaluation, agent tracing, and model registries. |
 | **[DVC](https://github.com/iterative/dvc)** | [<img src="https://img.shields.io/github/stars/iterative/dvc?style=social&color=white" alt="DVC Stars"/>](https://github.com/iterative/dvc/stargazers) | Data Versioning & Experiment Track | Git-native data and model version control paired with lightweight experiment tracking. |
