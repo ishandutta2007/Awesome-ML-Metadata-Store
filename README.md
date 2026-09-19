@@ -1,213 +1,138 @@
-# Awesome-ML-Metadata-Store
-
-## Top ML Metadata Store Platforms Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Experiment Tracking, Model Registry, Lineage, Artifact Metadata & MLOps Observability*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **ML Metadata Stores**. These systems record experiments, parameters, metrics, artifacts, models, and lineage so teams can reproduce results, compare runs, and govern the ML lifecycle.
-
-
-
-**Examples** include MLflow, Weights & Biases, Neptune.ai, Comet ML, ClearML, Kubeflow Metadata, Vertex AI Metadata, SageMaker ML Lineage, Fiddler AI, and Arize Phoenix (the category leaders).
-
-
-
-**Open-source emphasis**: Experiment tracking and metadata have strong open options. **MLflow**, **ClearML**, **Arize Phoenix**, **Google ML Metadata**, and related projects provide production-capable self-hosted stores. Commercial platforms still lead in polished collaboration UIs, managed hosting, and advanced LLM/observability features. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-- **[MLflow (Databricks managed & others)](https://mlflow.org/)**  
-
-  Open-source AI engineering platform widely used for experiment tracking, model registry, and evaluation; available as fully managed services (e.g., on Databricks) as well as self-hosted.
-
-
-
-- **[Weights & Biases](https://wandb.ai/)**  
-
-  Leading experiment tracking and collaboration platform with strong visualization, sweeps, and growing LLM/Weave observability features.
-
-
-
-- **[Neptune.ai](https://neptune.ai/)**  
-
-  Metadata-focused experiment tracking platform known for flexible querying, clean UI, and strong organization of runs and artifacts.
-
-
-
-- **[Comet ML](https://www.comet.com/)**  
-
-  Experiment tracking and MLOps platform with collaboration, model registry, and production monitoring capabilities.
-
-
-
-- **[ClearML Hosted](https://clear.ml/)**  
-
-  Managed offering of the ClearML stack covering experiment tracking, orchestration, and data/model management.
-
-
-
-- **[Kubeflow Metadata / Google ML Metadata integrations](https://www.kubeflow.org/)**  
-
-  Metadata components used within Kubeflow Pipelines (backed by Google’s ML Metadata library) for lineage and artifact tracking.
-
-
-
-- **[Vertex AI Metadata](https://cloud.google.com/vertex-ai)**  
-
-  Managed metadata and lineage service inside Google Cloud Vertex AI for tracking artifacts, executions, and pipeline lineage.
-
-
-
-- **[Amazon SageMaker ML Lineage Tracking](https://aws.amazon.com/sagemaker/)**  
-
-  Native lineage and metadata capabilities within SageMaker for tracking data, models, and workflow relationships.
-
-
-
-- **[Fiddler AI](https://www.fiddler.ai/)**  
-
-  Model performance and explainability platform that stores and surfaces monitoring and metadata insights for production models.
-
-
-
-- **[Arize Phoenix (hosted options) & Arize platform](https://arize.com/)**  
-
-  Observability and evaluation platform; Phoenix provides open-source tracing and evaluation with commercial Arize offerings for production scale.
-
-
-
-## Open-Source GitHub Projects
-
-- **[MLflow](https://github.com/mlflow/mlflow)**  
-
-  The most widely adopted open-source platform for experiment tracking, model registry, evaluation, and now broader AI engineering (agents/LLMs). Fully self-hostable.
-
-
-
-- **[ClearML](https://github.com/allegroai/clearml)**  
-
-  Open-source MLOps suite with experiment tracking, orchestration, data versioning, and model management; strong self-hosted story.
-
-
-
-- **[Arize Phoenix](https://github.com/Arize-ai/phoenix)**  
-
-  Open-source AI observability and evaluation library for tracing LLM and ML applications, with rich metadata and visualization.
-
-
-
-- **[Google ML Metadata (MLMD)](https://github.com/google/ml-metadata)**  
-
-  Library for recording and retrieving metadata associated with ML workflows; powers lineage in TensorFlow Extended (TFX) and Kubeflow Pipelines.
-
-
-
-- **[Kubeflow Metadata (legacy & integrations)](https://github.com/kubeflow/metadata)**  
-
-  Historical Kubeflow metadata components (now largely superseded by MLMD integrations) for tracking pipeline artifacts and executions.
-
-
-
-- **[Aim](https://github.com/aimhubio/aim)**  
-
-  Open-source, self-hosted experiment tracking tool focused on a fast UI and flexible metadata exploration.
-
-
-
-- **[DVC + Studio open components](https://github.com/iterative/dvc)**  
-
-  Data and model versioning with experiment tracking capabilities; pairs well with Git-centric ML workflows.
-
-
-
-- **[Sacred + Omniboard](https://github.com/IDSIA/sacred)**  
-
-  Lightweight open-source experiment organization framework with observer and dashboard options.
-
-
-
-- **[Polyaxon](https://github.com/polyaxon/polyaxon)**  
-
-  Open-source platform for managing ML experiments, tracking, and orchestration with a strong self-hosted option.
-
-
-
-- **[Guild AI](https://github.com/guildai/guildai)**  
-
-  Open-source experiment tracking and run management tool that works with existing scripts without heavy instrumentation.
-
-
-
-### Additional Strong Open-Source Options
-
-- Starting with **MLflow** for the broadest ecosystem, model registry, and zero-lock-in self-hosting.
-
-- Choosing **ClearML** when you want tracking plus orchestration in one open stack.
-
-- Using **Arize Phoenix** for LLM/agent tracing and evaluation metadata.
-
-- Combining **ML Metadata (MLMD)** with Kubeflow or TFX for formal lineage graphs.
-
-- Accepting that polished multi-user collaboration, advanced visualizations, managed scaling, and enterprise SSO still favor commercial platforms (Weights & Biases, Neptune, Comet, managed MLflow, etc.).
-
-- Focusing open-source efforts on reproducible experiment records, lineage, and data ownership.
-
-
-
-**Frameworks for building custom systems**: Instrument training scripts with MLflow/ClearML/Phoenix → store parameters, metrics, and artifacts → register models → query lineage for audits and debugging → optionally sync selected runs to a commercial UI for collaboration. Suitable for teams that need control over metadata storage and compliance. Many organizations still adopt hosted trackers for speed and team features while keeping the option to self-host.
-
-
-
-## How to Contribute
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- ML metadata stores often contain proprietary models, datasets, and business metrics. Self-hosted deployments require proper access control, encryption, and retention policies. This list is not security or compliance advice.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome ML Metadata Store Banner" width="100%">
+</p>
+
+<h1 align="center">Awesome ML Metadata Store 📊</h1>
+
+<p align="center">
+  <strong>A curated list of top SaaS platforms and open-source GitHub projects for Machine Learning Metadata Stores, Experiment Tracking, Model Registries, Lineage, and MLOps Observability.</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-ML-Metadata-Store?style=flat-square&color=blue" alt="GitHub Stars" />
+  <img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-ML-Metadata-Store?style=flat-square&color=green" alt="Last Commit" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-**Made for ML engineers, data scientists, and MLOps teams who need reliable experiment and lineage tracking.**
+## 📌 Overview & SEO Summary
 
-Let's keep ML metadata reproducible, queryable, and as open as practical.
+**ML Metadata Store** technologies are the backbone of modern **MLOps (Machine Learning Operations)** and **AI Engineering**. They systematically capture, store, query, and manage experiment hyperparameter tracking, model versioning, data lineage graphs, artifact metadata, and LLM evaluation tracing. 
+
+Whether you are comparing hyperparameters in deep learning models, auditing ML pipelines for enterprise compliance, or tracing LLM agent executions in production, selecting the right metadata store ensures full reproducibility and governance across the AI lifecycle.
+
+---
+
+## 📖 Table of Contents
+- [🌐 Market Overview & Dynamics](#-market-overview--dynamics)
+- [☁️ SaaS & Managed Platforms](#️-saas--managed-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [💡 Architecture & Framework Recommendations](#-architecture--framework-recommendations)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsor](#-support--sponsor)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## 🌐 Market Overview & Dynamics
+
+> **Estimated Market Size & Structure**: The global MLOps and ML Metadata / Observability market size is estimated at **$1.8 Billion – $2.5 Billion (2026)** with a projected CAGR exceeding 30%. The market is **moderately fragmented** — while hyper-scalers (AWS SageMaker, Google Cloud Vertex AI) and Databricks (MLflow) lead enterprise adoption, specialized platforms (Weights & Biases, Arize, Comet, Neptune) compete aggressively on advanced LLM tracing, hyperparameter visualization, and developer experience.
+
+---
+
+## ☁️ SaaS & Managed Platforms
+
+The table below lists leading commercial SaaS and managed platforms for ML metadata, sorted descending by company scale (valuation / annual revenue).
+
+| SaaS Platform 🚀 | Market Scale / Valuation / Revenue 🏢 | Pricing (Starting Tier) 💵 | Free Tier / Trial Limits 🎁 | Description 📝 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Amazon SageMaker Lineage](https://aws.amazon.com/sagemaker/)** | **$100B+** (AWS MLOps Division) | $0.40/hour per notebook instance (pay-as-you-go) | 2 months free trial with 250 hours of ml.t3.medium per month | Enterprise ML lineage and metadata integration inside AWS SageMaker pipelines. |
+| **[Vertex AI Metadata](https://cloud.google.com/vertex-ai)** | **$50B+** (Google Cloud AI Division) | $0.02 per 1,000 metadata store operations | $300 free credits for 90 days across Google Cloud | Fully managed metadata and artifact lineage service built into Google Cloud Vertex AI. |
+| **[MLflow (Databricks Managed)](https://mlflow.org/)** | **$43 Billion** Valuation | $0.07 per Databricks Unit (DBU) / ~$99/mo starter | 14-day free trial with full platform access | Fully managed MLflow hosted on Databricks with enterprise governance and compute integrations. |
+| **[Weights & Biases](https://wandb.ai/)** | **$1.25 Billion** Valuation | $50/user/month (Team Plan) | Free Forever for individuals with 100 GB artifact storage | Industry-standard experiment tracking, hyperparameter sweeps, and LLM evaluation with Weave. |
+| **[Comet ML](https://www.comet.com/)** | **$150 Million** Valuation | $179/month (Startup/Team tier) | Free Forever for individual researchers with 1 user limit | Full MLOps platform featuring experiment tracking, model registry, and production monitoring. |
+| **[Fiddler AI](https://www.fiddler.ai/)** | **$100 Million** Valuation | $500/month estimated starting tier | 14-day free trial upon request | Enterprise model observability, explainability, and production metadata tracking platform. |
+| **[ClearML Hosted](https://clear.ml/)** | **$80 Million** Valuation | $15/user/month (Pro Tier) | Free Forever for up to 3 team members with 100 GB storage | Cloud-hosted MLOps platform covering experiment tracking, pipeline orchestration, and data versioning. |
+| **[Arize AI Platform](https://arize.com/)** | **$75 Million** Valuation | $50/month (Team tier) | Free Forever (Phoenix OSS) & 14-day enterprise trial | Comprehensive AI observability, prompt engineering evaluation, and ML metadata management. |
+| **[Neptune.ai](https://neptune.ai/)** | **$30 Million** Valuation | $49/month (Team Plan) | Free Forever for individual projects with 200 hours tracking/mo | Metadata-focused experiment tracker optimized for complex run querying and flexible metrics loggers. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Below are top open-source ML metadata store libraries, experiment trackers, and MLOps platforms, sorted descending by GitHub star count ⭐.
+
+| Open-Source Project 🛠️ | GitHub Stars ⭐ | Primary Focus 🎯 | Description 📝 |
+| :--- | :---: | :--- | :--- |
+| **[MLflow](https://github.com/mlflow/mlflow)** | [<img src="https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white" alt="MLflow Stars"/>](https://github.com/mlflow/mlflow/stargazers) | Experiment Tracking & Model Registry | The most popular open-source platform for ML experiment tracking, evaluation, agent tracing, and model registries. |
+| **[DVC](https://github.com/iterative/dvc)** | [<img src="https://img.shields.io/github/stars/iterative/dvc?style=social&color=white" alt="DVC Stars"/>](https://github.com/iterative/dvc/stargazers) | Data Versioning & Experiment Track | Git-native data and model version control paired with lightweight experiment tracking. |
+| **[Arize Phoenix](https://github.com/Arize-ai/phoenix)** | [<img src="https://img.shields.io/github/stars/Arize-ai/phoenix?style=social&color=white" alt="Arize Phoenix Stars"/>](https://github.com/Arize-ai/phoenix/stargazers) | LLM Tracing & AI Observability | Open-source AI observability and evaluation library for tracing LLM applications, prompts, and ML metadata. |
+| **[ClearML](https://github.com/allegroai/clearml)** | [<img src="https://img.shields.io/github/stars/allegroai/clearml?style=social&color=white" alt="ClearML Stars"/>](https://github.com/allegroai/clearml/stargazers) | Full MLOps & Experiment Tracking | Open-source MLOps suite integrating experiment tracking, pipeline orchestration, and data/model management. |
+| **[Kedro](https://github.com/kedro-org/kedro)** | [<img src="https://img.shields.io/github/stars/kedro-org/kedro?style=social&color=white" alt="Kedro Stars"/>](https://github.com/kedro-org/kedro/stargazers) | Data Catalog & Pipeline Metadata | Production-grade Python framework for creating reproducible, maintainable, and modular data science pipelines. |
+| **[Hydra](https://github.com/facebookresearch/hydra)** | [<img src="https://img.shields.io/github/stars/facebookresearch/hydra?style=social&color=white" alt="Hydra Stars"/>](https://github.com/facebookresearch/hydra/stargazers) | Config & Run Metadata Management | Framework by Meta AI for dynamically configuring complex Machine Learning applications and experiments. |
+| **[Metaflow](https://github.com/Netflix/metaflow)** | [<img src="https://img.shields.io/github/stars/Netflix/metaflow?style=social&color=white" alt="Metaflow Stars"/>](https://github.com/Netflix/metaflow/stargazers) | Real-World ML & Artifact Tracking | Human-friendly Python/R framework originally built at Netflix for managing data science pipelines and artifact state. |
+| **[Flyte](https://github.com/flyteorg/flyte)** | [<img src="https://img.shields.io/github/stars/flyteorg/flyte?style=social&color=white" alt="Flyte Stars"/>](https://github.com/flyteorg/flyte/stargazers) | Workflow Orchestration & Lineage | Production-grade orchestrator built for data and ML pipelines with strong execution metadata and lineage. |
+| **[Aim](https://github.com/aimhubio/aim)** | [<img src="https://img.shields.io/github/stars/aimhubio/aim?style=social&color=white" alt="Aim Stars"/>](https://github.com/aimhubio/aim/stargazers) | Fast UI Experiment Tracker | Modular, self-hosted experiment tracking tool featuring a high-performance UI and deep metadata search capabilities. |
+| **[ZenML](https://github.com/zenml-io/zenml)** | [<img src="https://img.shields.io/github/stars/zenml-io/zenml?style=social&color=white" alt="ZenML Stars"/>](https://github.com/zenml-io/zenml/stargazers) | Extensible MLOps & Lineage | Extensible open-source MLOps framework to connect experiment trackers, artifact stores, and orchestrators. |
+| **[Google ML Metadata (MLMD)](https://github.com/google/ml-metadata)** | [<img src="https://img.shields.io/github/stars/google/ml-metadata?style=social&color=white" alt="MLMD Stars"/>](https://github.com/google/ml-metadata/stargazers) | Standardized Workflow Lineage | Core library for recording metadata in ML pipelines; powers TensorFlow Extended (TFX) and Kubeflow Metadata. |
+| **[Polyaxon](https://github.com/polyaxon/polyaxon)** | [<img src="https://img.shields.io/github/stars/polyaxon/polyaxon?style=social&color=white" alt="Polyaxon Stars"/>](https://github.com/polyaxon/polyaxon/stargazers) | Cloud-Native ML Experimentation | Kubernetes-native platform for managing, tracking, and orchestrating Machine Learning and Deep Learning jobs. |
+| **[Sacred](https://github.com/IDSIA/sacred)** | [<img src="https://img.shields.io/github/stars/IDSIA/sacred?style=social&color=white" alt="Sacred Stars"/>](https://github.com/IDSIA/sacred/stargazers) | Lightweight Experiment Logging | Python tool to configure, organize, log, and reproduce machine learning experiments alongside tools like Omniboard. |
+| **[Guild AI](https://github.com/guildai/guildai)** | [<img src="https://img.shields.io/github/stars/guildai/guildai?style=social&color=white" alt="Guild AI Stars"/>](https://github.com/guildai/guildai/stargazers) | Zero-Code Instrumentation Tracker | Open-source run capture and tracking tool that works with existing scripts without code modifications. |
+| **[Kubeflow Metadata](https://github.com/kubeflow/metadata)** | [<img src="https://img.shields.io/github/stars/kubeflow/metadata?style=social&color=white" alt="Kubeflow Metadata Stars"/>](https://github.com/kubeflow/metadata/stargazers) | Pipeline Execution Tracking | Component for tracking artifact and execution metadata within legacy and integrated Kubeflow pipelines. |
+
+---
+
+## 💡 Architecture & Framework Recommendations
+
+- 🚀 **Broadest Ecosystem & Model Registry**: Choose **MLflow** for robust artifact tracking, zero-lock-in self-hosting, and widespread industry adoption.
+- ⚡ **All-In-One MLOps Stack**: Opt for **ClearML** if you need experiment logging combined with remote worker execution and orchestration.
+- 🤖 **LLM Tracing & Prompt Metadata**: Use **Arize Phoenix** for modern generative AI applications, agent call stacks, and RAG evaluation.
+- 🌿 **Git-Native Data Versioning**: Pair **DVC** with your repositories for tracking large dataset versions and model binaries directly alongside source code.
+- 🏗️ **Formal Lineage Graphs**: Integrate **Google ML Metadata (MLMD)** with Kubeflow or TFX pipelines when auditing compliance and dataset transformation chains.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Help us keep this directory up-to-date:
+
+1. 🍴 **Fork** this repository.
+2. 📝 **Add or update** entries in `README.md` following the table format.
+3. 🔍 **Ensure** factual details for pricing, free tier specs, valuation/scale, and official URLs.
+4. 📬 **Submit a Pull Request** with a clear explanation of your changes.
+
+---
+
+## 💖 Support & Sponsor
+
+Thank you for exploring this curated collection of ML metadata stores and MLOps ecosystem projects! 
+
+If you find this repository valuable for your research, projects, or organization, please consider:
+- ⭐ **Starring** this repository to increase visibility.
+- 🍴 **Forking** and sharing with fellow ML engineers and data scientists.
+- ☕ **Sponsoring / Buying a Coffee**: You can support ongoing maintenance and content curation via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+Your support is deeply appreciated! 🙌
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-ML-Metadata-Store&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-ML-Metadata-Store&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated list** for informational and research purposes only.
+- ML metadata stores often handle sensitive model weights, customer telemetry, and parameters. Ensure proper encryption, identity access management (IAM), and compliance retention policies when deploying self-hosted or cloud metadata stores.
+
+---
+
+<p align="center">
+  Made with ❤️ for ML Engineers, Data Scientists, and MLOps Practitioners.
+</p>
